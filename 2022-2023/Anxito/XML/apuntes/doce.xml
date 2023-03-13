@@ -19,15 +19,11 @@
         <valor_deseado>9980</valor_deseado>
         <valor_minimo>9950</valor_minimo>
         <valor_maximo>10020</valor_maximo>
-        <ciudad_procedencia>
-            <tokio/>
-        </ciudad_procedencia>
+        <ciudad_procedencia>tokio</ciudad_procedencia>
     </bono>
     <letra precio="45020">
         <tipo_de_interes>4.54%</tipo_de_interes>
-        <pais_emisor>
-            <espania/>
-        </pais_emisor>
+        <pais_emisor>espania</pais_emisor>
         <ciudad_procedencia>madrid</ciudad_procedencia>
     </letra>
 </listado>

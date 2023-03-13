@@ -55,15 +55,20 @@
     <xsd:complexType name="tCiudad">
         <xsd:simpleContent>
             <xsd:restriction base="xsd:string">
-                <xsd:enumeration value=""
+                <xsd:enumeration value="frankfurt"/>
+                <xsd:enumeration value="madrid" />
+                <xsd:enumeration value="tokio"/>
             </xsd:restriction>
         </xsd:simpleContent>
     </xsd:complexType>
 
     <!--tPais-->
     <xsd:complexType name="tPais">
-
-
+        <xsd:simpleContent>
+        <xsd:restriction base="xsd:string">
+            <xsd:enumeration value="espania"/>
+        </xsd:restriction>
+        </xsd:simpleContent>
     </xsd:complexType>
 
 </xsd:schema>
