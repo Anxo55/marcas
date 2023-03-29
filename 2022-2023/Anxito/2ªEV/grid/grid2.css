@@ -5,8 +5,8 @@ margin: 40px;
 
 /*trabajamos a tres columnas NO auto*/
 .wrapper {
-width: ;
-display: ;
+width: auto;
+display: block;
 display: grid;
 grid-template-columns: 100px 100px 100px;
 grid-gap: 10px;
