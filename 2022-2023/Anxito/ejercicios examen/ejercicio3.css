@@ -1,85 +1,70 @@
-/* pseudo estilos */
+body {
+  margin: 40px;
+}
+.header{
+  grid-area: header;
+}
+.footer{
+  grid-area: footer;
+}
+.sidebar {
+  grid-area: sidebar;
+}
+.main{
+  grid-area: main;
+}
 
-*, *:before, *:after {
-    box-sizing: border-box;
-  }
-  
-  body {
-    font-family: 'Open Sans', 'sans-serif';
-    background-color: #fff;
-    color: #444;
-    padding: 10px;
-  }
-  
-  h1, p {
-    /* primero arriba, derecha, abajo, izquierda */
-    margin: 0 0 0 0;
-  }
-  
-  /* no grid support? */
-  .sidebar {
-    float: right;
-    width: 19.1489%;
-  }
 
-  .main{
-    float: left;
-    width: 19.1489%;
-  }
-  
-  .content {
-    float: right;
-    width: 79.7872%;
-  }
-  
-  /* make a grid */
-  .wrapper {
-    max-width: 940px;
-    margin: 0 auto;
+.wrapper {
+    width: 80%;
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    
+    margin: auto;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(6, 75px);
+    grid-template-areas:
+               "header header  header header"
+               "...... main   main  ......"
+               "...... main   main  ......"
+               "...... main   main   ......"
+               "...... main   main   ......"
+               "footer  footer  footer  footer";
+    border: 3px solid grey;
   }
-  
-  /* esta incluido dentro de que */
-  .wrapper > * {
-    background-color: cornflowerblue;
-    color: #fff;
-    padding: 20px;
-    font-size: 150%;
-    /* needed for the floated layout*/
-    margin-bottom: 10px;
+  .content {
+  grid-area: content;
+}
+.twin1{
+  grid-area: twin1;
+}
+.twin2{
+  grid-area: twin2;
+}
+.main {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 75px);
+    grid-template-areas:
+               "content content  content sidebar"
+               "content content  content sidebar"
+               "twin1 twin1   twin2  twin2"
+               "twin1 twin1   twin2  twin2";
   }
-  
-  .header, .footer {
-    /* que significa el -1 como columna a la que see llega */
-    grid-column: 1 /-1;
-    /* needed for the floated layout */
-    clear: both;
-  }
-  
-  
-  /* We need to set the widths used on floated items back to auto, 
-  and remove the bottom margin as when we have grid we have gaps. */
-  @supports (display: grid) {
-    .wrapper > * {
-      width: auto;
-      margin:0;
-    }
-  }
-
-  .a{
-    background-color: greenyellow;
-  }
-
-  .b{
-background-color: violet;
-  }
-
-  .c{
-    background-color: orange;
-  }
-
-  .d{
-background-color: orange;
-  }
+.box {
+  margin: 1px;
+  font-size: 150%;
+}
+.header{
+  background-color: lightblue;
+}
+.footer{
+  background-color: blue;
+}
+.sidebar {
+  background-color: purple;
+}
+.content {
+  background-color: green;
+}
+.twin1, .twin2{
+  background-color: orange;
+}
