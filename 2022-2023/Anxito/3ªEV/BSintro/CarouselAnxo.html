@@ -93,14 +93,23 @@
         width: 1400px;
       }
 
-      /* .portada{
-        background-image: url(imagenes4/0x0.png);
-      } */
 
-     /* img{
-      width: 100%;
-      height: 100%;
-     } */
+     .container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 10px;
+    }
+
+    .box1 {
+      grid-column-start: 1;
+      grid-column-end: 2;
+    }
+
+    .box2 {
+      grid-column-start: 2;
+      grid-column-end: 3;
+    }
+		
      
     </style>
 
@@ -310,15 +319,15 @@
         <h2 class="featurette-heading fw-normal lh-1" style="text-align: center;"><span style="text-shadow: 5px 5px 5px gray;">HOMBRE</span></h2> <br>
 
         <div style="border: 1px solid red; background-color: black; padding: 10px;">
-        <p style="text-align: center; color: white;" >Ropa de hombre</p>
+        <a href="https://www.jdsports.es/hombre/ropa-de-hombre/" target="_blank"><p style="text-align: center; color: white;" >Ropa de hombre</p></a> 
         </div>
         <br>
         <div style="border: 1px solid red; background-color: black; padding: 10px;">
-        <p style="text-align: center; color: white;">Calzado de hombre</p>
+        <a href="https://www.jdsports.es/hombre/calzado-de-hombre/" target="_blank"><p style="text-align: center; color: white;">Calzado de hombre</p></a>
         </div>
         <br>
         <div style="border: 1px solid red; background-color: black; padding: 10px;">
-        <p style="text-align: center; color: white;">Accesorios de hombre</p>
+        <a href="https://www.jdsports.es/hombre/accesorios-de-hombre/" target="_blank"><p style="text-align: center; color: white;">Accesorios de hombre</p></a>
         </div>
       </div>
       <div class="col-md-5">
@@ -333,15 +342,15 @@
         <h2 class="featurette-heading fw-normal lh-1" style="text-align: center;"><span style="text-shadow: 5px 5px 5px gray;">MUJER</span></h2> <br>
         
         <div style="border: 1px solid red; background-color: black; padding: 10px;">
-        <p style="text-align: center; color: white;">Ropa de mujer</p>
+        <a href="https://www.jdsports.es/mujer/ropa-de-mujer/" target="_blank"><p style="text-align: center; color: white;">Ropa de mujer</p></a>
         </div>
         <br>
         <div style="border: 1px solid red; background-color: black; padding: 10px;">
-        <p style="text-align: center; color: white;">Calzado de mujer</p>
+        <a href="https://www.jdsports.es/mujer/calzado-de-mujer/" target="_blank"><p style="text-align: center; color: white;">Calzado de mujer</p></a>
         </div>
         <br>
         <div style="border: 1px solid red; background-color: black; padding: 10px;">
-        <p style="text-align: center; color: white;">Accesorios de mujer</p>
+        <a href="https://www.jdsports.es/mujer/accesorios-de-mujer/" target="_blank"><p style="text-align: center; color: white;">Accesorios de mujer</p></a>
         </div>       
       </div>
       <div class="col-md-5 order-md-1">
@@ -356,15 +365,15 @@
         <h2 class="featurette-heading fw-normal lh-1" style="text-align: center;"><span style="text-shadow: 5px 5px 5px gray;">NIÑO</span></h2> <br>
 
         <div style="border: 1px solid red; background-color: black; padding: 10px;">
-        <p style="text-align: center; color: white;">Ropa de niño</p>
+        <a href="https://www.jdsports.es/ninos/c/ropa/" target="_blank"><p style="text-align: center; color: white;">Ropa de niño</p></a>
         </div>
         <br>
         <div style="border: 1px solid red; background-color: black; padding: 10px;">
-        <p style="text-align: center; color: white;">Calzado de niño</p>
+        <a href="https://www.jdsports.es/ninos/c/calzado/" target="_blank"><p style="text-align: center; color: white;">Calzado de niño</p></a>
         </div>
         <br>
         <div style="border: 1px solid red; background-color: black; padding: 10px;">
-          <p style="text-align: center; color: white;">Accesorios de niño</p>
+          <a href="https://www.jdsports.es/ninos/accesorios-ninos/" target="_blank"><p style="text-align: center; color: white;">Accesorios de niño</p></a>
           </div>
       </div>
       <div class="col-md-5">
@@ -373,36 +382,34 @@
     </div>
 
     <hr class="featurette-divider">
+    
+    <hr>
+    
 
     <!-- /END THE FEATURETTES -->
 
   </div><!-- /.container -->
 
-<div class="container">
-<footer class="container">
-  <p style="text-align: left;">Compra con jd</p>
-  <p style="text-align: left;">Guia de tallas</p>
-  <p style="text-align: left;">Buscador de tiendas</p>
-  <p style="text-align: left;">Descuento por ser estudiante</p>
-  <p style="text-align: left;">Calendario de lanzamientos</p>
-  </footer>
+  <br><br><br>
+    <div class="container">
+      <div class="box box1" style="background-color: black; text-align: center;">
+        <h3 style="color: white;">TARJETAS REGALO</h3>
+         <img src="imagenes4/tarjeta-regalo-nintendo-saldo.jpg" alt="" width="200"> 
+        <h3 style="color: white;">5€ - 300€</h3>
+        <p style="color: white;">La tarjeta regalo fisica de jd es el ragalo que estabas buscando.</p>
+        <h3 style="color: white;">COMPRAR TARJETAS REGALO</h3>
+      </div>
 
-  <footer class="container">
-  <p style="text-align: center;">Atencion al cliente</p>
-  <p style="text-align: center;">Preguntas frecuentes</p>
-  <p style="text-align: center;">Envios y devoluciones</p>
-  <p style="text-align: center;">Seguimiento de envio</p>
-  </footer>
-
-<footer class="con">
-  <p style="text-align: right;">La empresa</p>
-  <p style="text-align: right ;">Trabaja con nosotros</p>
-  <p style="text-align: right;">JD Sports Fashion</p>
-  <p style="text-align: right;">Programa de afiliados</p>
-</footer>
-</div>
-
-
+      <div class="box box2">
+        <div class="box box2" style="background-color: black; text-align: center; height: 500px;"  >
+          <h3 style="color: white;">NUESTRAS TIENDAS</h3>
+           <img src="imagenes4/image002-2.png" alt="" width="400px"> 
+          <p style="color: white;">Encuentra aquí tu tienda JD más cercana y sus horarios</p>
+          <h3 style="color: white;">BUSCADOR DE TIENDAS</h3>
+          </div>
+      </div>
+    </div>
+<br>
 
   <!-- FOOTER -->
   <footer class="container">
@@ -410,7 +417,7 @@
     <img src="imagenes4/metodos-pago.png" alt="" class="float-end"> 
     <p class="float-end">Aceptamos las siguientes formas de pago:</p>
     
-    <p>Visita nuestra oágina corporativa en   www.jdplc.com</p>
+    <p>Visita nuestra página corporativa en   www.jdplc.com</p>
     <p>Copyright &copy; 2023 JD Sports, Todos los derechos reservados. </p>
   </footer>
 </main>
@@ -419,5 +426,5 @@
     <script src="../bootstrap-5.3.0-alpha3-examples/assets/dist/js/bootstrap.bundle.min.js"></script>
 
       
-  </body>
+</body>
 </html>
