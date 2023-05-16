@@ -89,6 +89,17 @@
       .bd-mode-toggle {
         z-index: 1500;
       }
+
+      body{
+        background-image: url(jumbotron/98.webp);
+        background-repeat: no-repeat;
+        /* background-position: ; */
+      }
+
+      /* img{
+        height: 500px;
+        width: 400px;
+      }  */
     </style>
 
     
@@ -110,41 +121,6 @@
       </symbol>
     </svg>
 
-    <div class="dropdown position-fixed bottom-0 end-0 mb-3 me-3 bd-mode-toggle">
-      <button class="btn btn-bd-primary py-2 dropdown-toggle d-flex align-items-center"
-              id="bd-theme"
-              type="button"
-              aria-expanded="false"
-              data-bs-toggle="dropdown"
-              aria-label="Toggle theme (auto)">
-        <svg class="bi my-1 theme-icon-active" width="1em" height="1em"><use href="#circle-half"></use></svg>
-        <span class="visually-hidden" id="bd-theme-text">Toggle theme</span>
-      </button>
-      <ul class="dropdown-menu dropdown-menu-end shadow" aria-labelledby="bd-theme-text">
-        <li>
-          <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="light" aria-pressed="false">
-            <svg class="bi me-2 opacity-50 theme-icon" width="1em" height="1em"><use href="#sun-fill"></use></svg>
-            Light
-            <svg class="bi ms-auto d-none" width="1em" height="1em"><use href="#check2"></use></svg>
-          </button>
-        </li>
-        <li>
-          <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="dark" aria-pressed="false">
-            <svg class="bi me-2 opacity-50 theme-icon" width="1em" height="1em"><use href="#moon-stars-fill"></use></svg>
-            Dark
-            <svg class="bi ms-auto d-none" width="1em" height="1em"><use href="#check2"></use></svg>
-          </button>
-        </li>
-        <li>
-          <button type="button" class="dropdown-item d-flex align-items-center active" data-bs-theme-value="auto" aria-pressed="true">
-            <svg class="bi me-2 opacity-50 theme-icon" width="1em" height="1em"><use href="#circle-half"></use></svg>
-            Auto
-            <svg class="bi ms-auto d-none" width="1em" height="1em"><use href="#check2"></use></svg>
-          </button>
-        </li>
-      </ul>
-    </div>
-
     
 <main>
   <div class="container py-4">
@@ -156,25 +132,32 @@
 
     <div class="p-5 mb-4 bg-body-tertiary rounded-3">
       <div class="container-fluid py-5">
-        <h1 class="display-5 fw-bold">Custom jumbotron</h1>
-        <p class="col-md-8 fs-4">Using a series of utilities, you can create this jumbotron, just like the one in previous versions of Bootstrap. Check out the examples below for how you can remix and restyle it to your liking.</p>
-        <button class="btn btn-primary btn-lg" type="button">Example button</button>
+        <div class="row">
+          <div class="col-md-8">
+            <h1 class="display-5 fw-bold">Nuestras tiendas</h1>
+            <p class="fs-4">Podréis encontrar nuestros comercios en cualquier ciudad y provincia. Estamos muy bien distribuidos y os ofrecemos seguridad y, sobre todo, un buen trato a la hora de cualquier duda con los productos. ¡No lo dudes y compra en Mercadona!</p>
+            <a href="https://info.mercadona.es/es/supermercados" target="_blank"> <button class="btn btn-secondary btn-lg" type="button">Buscar</button></a>
+          </div>
+          <div class="col-md-4">
+            <img src="jumbotron/entrada.jpg" alt="" class="img-fluid">
+          </div>
+        </div>
       </div>
     </div>
 
     <div class="row align-items-md-stretch">
       <div class="col-md-6">
         <div class="h-100 p-5 text-bg-dark rounded-3">
-          <h2>Change the background</h2>
-          <p>Swap the background-color utility and add a `.text-*` color utility to mix up the jumbotron look. Then, mix and match with additional component themes and more.</p>
-          <button class="btn btn-outline-light" type="button">Example button</button>
+          <h2>Trabaja con nosotros</h2>
+          <p>Te damos la bienvenida a la página de Empleo de Mercadona, un espacio para conocer las últimas ofertas de empleo y el valor que Mercadona da a las personas que conforman su equipo. Un equipo repleto de talento, orientado a la excelencia y a dar lo mejor a su clientela..</p>
+          <a href="https://info.mercadona.es/es/conocenos/empleo" target="_blank"><button class="btn btn-outline-light" type="button">Saber más</button></a>
         </div>
       </div>
       <div class="col-md-6">
         <div class="h-100 p-5 bg-body-tertiary border rounded-3">
-          <h2>Add borders</h2>
-          <p>Or, keep it light and add a border for some added definition to the boundaries of your content. Be sure to look under the hood at the source HTML here as we've adjusted the alignment and sizing of both column's content for equal-height.</p>
-          <button class="btn btn-outline-secondary" type="button">Example button</button>
+          <h2>Nuestros Productos</h2>
+          <p>En todas nuestras secciones podreis encontrar todo tipo de categorias, podreis encontrar todo tipo de carne y todo tipo de pescado, incluso productos de limpieza. No dudes en preguntarnis, ya que estaremos siempre a su servicio.</p>
+          <a href="https://info.mercadona.es/es/inicio" target="_blank"> <button class="btn btn-outline-secondary" type="button">Información</button></a>
         </div>
       </div>
     </div>
